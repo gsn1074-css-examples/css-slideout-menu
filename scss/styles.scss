@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+    display: block;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: -100vw;
+    z-index: 999;
+    padding: .5rem 1rem;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: blue;
+    transition: all 1s;
+}
+
+nav.open {
+    left: 0;
+}
+
+nav *:first-child {
+    position: fixed;
+    left: 0;
+    top: 50vh;
+    padding: 1em;
+    cursor: pointer;
+    clear: both;
+}
+
+nav a {
+    display: block;
+    font-size: 4em;
+    color: #000;
+    font-family: arial;
+    text-decoration: none;
+    margin-top: .2em;
+}
